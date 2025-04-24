@@ -13,23 +13,51 @@
   </header>
 
   <nav>
-    <ul>
+    <ul class="nav-main">
       <li><a href="index.html">Home</a></li>
-      <li><a href="junior.html">Junior Year</a></li>
-      <li><a href="senior.html">Senior Year</a></li>
-      <li><a href="applications.html">Applications</a></li>
-      <li><a href="essays.html">Essays</a></li>
-      <li><a href="testing.html">ACT/SAT</a></li>
-      <li><a href="scholarships.html">Scholarships</a></li>
-      <li><a href="planning.html">Project Planning</a></li>
-      <li><a href="mla-apa.html">MLA & APA Format</a></li>
-      <li><a href="resources.html">Research & Tools</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Planning <span class="nav-arrow">▾</span></a>
+        <div class="dropdown-content">
+          <a href="junior.html">Junior Year</a>
+          <a href="senior.html">Senior Year</a>
+          <a href="timeline.html">Visual Timeline</a>
+          <a href="planning.html">Project Planning</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Applications <span class="nav-arrow">▾</span></a>
+        <div class="dropdown-content">
+          <a href="applications.html">Process Overview</a>
+          <a href="essays.html">Essays</a>
+          <a href="scholarships.html">Scholarships</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Resources <span class="nav-arrow">▾</span></a>
+        <div class="dropdown-content">
+          <a href="testing.html">ACT/SAT</a>
+          <a href="mla-apa.html">MLA & APA Format</a>
+          <a href="resources.html">Research & Tools</a>
+        </div>
+      </li>
     </ul>
   </nav>
 
   <main>
     <section>
+      <h2>Visual Timeline</h2>
+      <p>Check out our <a href="timeline.html">interactive timeline</a> to visualize the entire college preparation roadmap from junior to senior year.</p>
+    </section>
+    <section>
       <h2>Career and College Prep Roadmap – Junior Year</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="phase-badge">Phase 1</span>
+          <h3>Self-Discovery</h3>
+          <p>Begin your journey by understanding yourself better.</p>
+        </div>
+      </div>
+      
       <ul>
         <li>Study for the ACT/SAT</li>
         <li>Take practice tests or tutoring</li>
@@ -55,11 +83,13 @@
     <section>
       <h2>Step 1: Self-Assessment</h2>
       <p>Use these tools to discover your strengths and interests:</p>
-      <ul>
-        <li>O*NET Interest Profiler – My Next Move</li>
-        <li>Holland Code (RIASEC) Test</li>
-        <li>16Personalities | Enneagram | Positivity Project</li>
-        <li>Character Strengths | Work Values Test</li>
+      <ul class="tool-list">
+        <li><span class="tool-name">O*NET Interest Profiler – My Next Move:</span> Identify career interests based on activities you enjoy</li>
+        <li><span class="tool-name">Holland Code (RIASEC) Test:</span> Categorizes your personality type for career matching</li>
+        <li><span class="tool-name">16Personalities:</span> Myers-Briggs based personality assessment with career suggestions</li>
+        <li><span class="tool-name">Enneagram:</span> Identifies core motivations and personality patterns</li>
+        <li><span class="tool-name">Positivity Project:</span> Focuses on character strengths</li>
+        <li><span class="tool-name">Work Values Test:</span> Identifies what matters most to you in a workplace</li>
       </ul>
     </section>
 
@@ -67,8 +97,10 @@
       <h2>Step 2: Career Exploration</h2>
       <ul>
         <li>Use O*NET, CareerOneStop, and the Occupational Outlook Handbook</li>
-        <li>Conduct informational interviews</li>
+        <li>Conduct informational interviews via LinkedIn, friends, or family</li>
         <li>Make a list of specific jobs that interest you</li>
+        <li>Explore broad career clusters (STEM, business, healthcare, etc.)</li>
+        <li>Investigate specific jobs: duties, salary, job outlook</li>
       </ul>
     </section>
 
@@ -76,7 +108,9 @@
       <h2>Step 3: Narrowing Down</h2>
       <p>Evaluate education paths, job market demand, and align with your values.</p>
       <ul>
-        <li>Start a passion project based on what you’ve learned</li>
+        <li>List potential majors and careers</li>
+        <li>Evaluate education needs, cost, job demand</li>
+        <li>Start a passion project based on what you've learned</li>
         <li>Reflect frequently as your plans take shape</li>
       </ul>
     </section>

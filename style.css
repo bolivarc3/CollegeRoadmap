@@ -69,8 +69,110 @@ body {
     padding-bottom: 5px;
   }
   
+  h3 {
+    color: #0a9396;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .phase-badge {
+    display: inline-block;
+    background: #ee9b00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline {
+    border-left: 4px solid #94d2bd;
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #0a9396;
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+    top: 5px;
+  }
+  
+  .timeline-item h3 {
+    margin-top: 0;
+    color: #ee9b00;
+  }
+
+  .timeline-item ul {
+    margin-top: 8px;
+  }
+  
   ul {
     padding-left: 20px;
+  }
+  
+  ul.tool-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul.tool-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+  }
+  
+  .tool-name {
+    font-weight: bold;
+    color: #005f73;
+  }
+  
+  .formula-box {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #0a9396;
+  }
+
+  .formula-box p {
+    margin: 5px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+  }
+  
+  table th {
+    background-color: #e9ecef;
+    color: #005f73;
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+  }
+  
+  table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
   }
   
   footer {
@@ -80,4 +182,140 @@ body {
     color: white;
     position: relative;
   }
-  
+
+  .cta-container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #118ab2 0%, #0a9396 100%);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(10, 147, 150, 0.4);
+    transition: all 0.3s ease;
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(10, 147, 150, 0.5);
+    background: linear-gradient(135deg, #0a9396 0%, #118ab2 100%);
+  }
+
+  .cta-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .cta-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .cta-description {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  /* Main navigation styling updates */
+  .nav-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .nav-arrow {
+    font-size: 10px;
+    margin-left: 3px;
+  }
+
+  /* Dropdown button */
+  .dropbtn {
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #e9ecef;
+    color: #0a9396;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #118ab2;
+    border-radius: 4px;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .cta-button {
+      width: 100%;
+      padding: 15px 30px;
+    }
+    
+    .cta-text {
+      font-size: 18px;
+    }
+
+    .nav-main {
+      flex-direction: column;
+    }
+    
+    .dropdown-content {
+      position: static;
+      box-shadow: none;
+      width: 100%;
+    }
+    
+    .dropdown {
+      width: 100%;
+      text-align: center;
+    }
+    
+    nav ul li {
+      margin: 5px 0;
+    }
+  }

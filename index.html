@@ -13,17 +13,33 @@
   </header>
 
   <nav>
-    <ul>
+    <ul class="nav-main">
       <li><a href="index.html">Home</a></li>
-      <li><a href="junior.html">Junior Year</a></li>
-      <li><a href="senior.html">Senior Year</a></li>
-      <li><a href="applications.html">Applications</a></li>
-      <li><a href="essays.html">Essays</a></li>
-      <li><a href="testing.html">ACT/SAT</a></li>
-      <li><a href="scholarships.html">Scholarships</a></li>
-      <li><a href="planning.html">Project Planning</a></li>
-      <li><a href="mla-apa.html">MLA & APA Format</a></li>
-      <li><a href="resources.html">Research & Tools</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Planning <span class="nav-arrow">▾</span></a>
+        <div class="dropdown-content">
+          <a href="junior.html">Junior Year</a>
+          <a href="senior.html">Senior Year</a>
+          <a href="timeline.html">Visual Timeline</a>
+          <a href="planning.html">Project Planning</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Applications <span class="nav-arrow">▾</span></a>
+        <div class="dropdown-content">
+          <a href="applications.html">Process Overview</a>
+          <a href="essays.html">Essays</a>
+          <a href="scholarships.html">Scholarships</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Resources <span class="nav-arrow">▾</span></a>
+        <div class="dropdown-content">
+          <a href="testing.html">ACT/SAT</a>
+          <a href="mla-apa.html">MLA & APA Format</a>
+          <a href="resources.html">Research & Tools</a>
+        </div>
+      </li>
     </ul>
   </nav>
 
@@ -31,6 +47,45 @@
     <section class="intro">
       <h2>Welcome</h2>
       <p>This site was created to help students through the journey of college preparation. Please explore each section from the navigation bar above.</p>
+      
+      <div class="cta-container">
+        <a href="timeline.html" class="cta-button">
+          <span class="cta-icon">📊</span>
+          <span class="cta-text">View Interactive Timeline</span>
+          <span class="cta-description">Month-by-month guide for junior and senior year</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>The College Roadmap</h2>
+      <p>Our comprehensive guide takes students through four key phases of college preparation:</p>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="phase-badge">Phase 1</span>
+          <h3>Self-Discovery (Junior Year Start)</h3>
+          <p>Identify your interests, strengths, values, and personality through self-assessment tools and feedback.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <span class="phase-badge">Phase 2</span>
+          <h3>Research Careers</h3>
+          <p>Explore career clusters, investigate specific jobs, and conduct informational interviews.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <span class="phase-badge">Phase 3</span>
+          <h3>Narrow and Evaluate Options</h3>
+          <p>List potential majors and careers, evaluate education needs, costs, job demand, and start passion projects.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <span class="phase-badge">Phase 4</span>
+          <h3>Focus and Apply (End of Junior - Senior Year)</h3>
+          <p>Follow our monthly timeline to make final decisions and apply to colleges.</p>
+        </div>
+      </div>
     </section>
 
     <section>
